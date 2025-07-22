@@ -1,0 +1,19 @@
+name: 🚀 Xserver FTP Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 📂 FTPデプロイ
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.XSERVER_FTP_SERVER }}    # sv8536.xserver.jp
+          username: ${{ secrets.XSERVER_FTP_USERNAME }} # harugorou
+          password: ${{ secrets.XSERVER_FTP_PASSWORD }}
+          local-dir: "./"  # GitHubリポジトリ内のデプロイしたいフォルダを指定
+          server-dir: "/marutakesyobou.com/public_html/wp/wp-content/themes/tsuduri/"
