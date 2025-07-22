@@ -1,0 +1,92 @@
+/* STYLE OF THEME OPTION
+------------------------------------------------------------*/
+
+#mioOptions {
+    font: 120%/1.5 Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+#mioOptions .first {
+    padding-bottom: 30px;
+}
+
+#mioOptions h3 {
+    border-left: solid 10px #666;
+    padding: 6px 15px;
+    color: #666;
+    font-size: 150%;
+}
+
+#mioOptions h3 span {
+    font-size: .8em;
+}
+
+#mioOptions table {
+    width: 80%;
+    border: 1px #999 solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#mioOptions table th,
+#mioOptions table td {
+    padding: 5px 10px;
+    border: 1px #999 solid;
+    border-width: 0 0 1px 1px;
+}
+
+#mioOptions table th {
+    background: #ccc;
+    width: 30%;
+    text-align: left;
+}
+
+#mioOptions table span {
+    color: #666;
+}
+
+#mioOptions table dt,
+#mioOptions table dd {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#mioOptions table dt {
+    font-weight: bold;
+}
+
+#mioOptions table dd {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#mioOptions input,
+#mioOptions textarea {
+    width: 95%;
+}
+
+#mioOptions input.button-primary {
+    width: auto;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#mioOptions table dd input {
+    margin-bottom: 5px;
+}
+
+#mioOptions p.img {
+    text-align: center;
+}
+
+#mioOptions p.img img {
+    width: 150px;
+}
+
+#mioOptions ol {
+    margin-left: 30px;
+}
+
+#mioOptions img.alignLeft {
+    float: left;
+    display: inline;
+    margin: 0 20px 0 0;
+}

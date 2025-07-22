@@ -1,0 +1,425 @@
+/* IE & Edge対応
+******************************************************************************/
+
+/*IE10*/
+
+@media all and (-ms-high-contrast:none) {
+    .vertical_c > p {
+        font-size: 22px;
+    }
+}
+
+/*IE11*/
+
+@media all and (-ms-high-contrast:none) {
+
+    *::-ms-backdrop,
+    .vertical_c > p {
+        font-size: 22px;
+    }
+}
+
+/*Edge*/
+
+@supports (-ms-ime-align:auto) {}
+
+
+/* レスポンシブ対応
+******************************************************************************/
+
+/*1200px以下*/
+
+@media only screen and (max-width: 1200px) {
+
+    /*******************************************
+    * Navigation(グローバルナビゲーションのスタイル)
+    ********************************************/
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .main_menu .menu .fa-plus,
+    .main_menu .menu .fa-minus {
+        display: inline-block;
+    }
+
+    .main_nav_inner {
+        display: none;
+    }
+
+    .main_menu .menu {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .main_menu .menu > li,
+    .main_menu .menu ul > li {
+        display: block;
+        padding: 20px 10px;
+        text-align: left;
+        position: relative;
+    }
+
+    .main_menu .menu > li:hover,
+    .main_menu .menu ul > li:hover {
+        /*background: #333;*/
+    }
+
+    .main_menu .menu li a {
+        display: block;
+    }
+
+    .main_menu .menu > li > .sub-menu > li::before,
+    .main_menu .menu ul > li > .sub-menu > li::before {
+        display: none;
+    }
+
+    .main_menu .menu > li > .sub-menu,
+    .main_menu .menu ul > li > .sub-menu {
+        display: none;
+        width: 100%;
+        position: static;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        /*background: #333;*/
+        padding: 0;
+        animation: none;
+        -webkit-animation: none;
+        margin-top: 20px;
+    }
+
+    .main_menu .menu > li:hover > .sub-menu,
+    .main_menu .menu ul > li:hover > .sub-menu {
+        display: none;
+        position: static;
+        bottom: 0;
+        left: 0;
+        animation: none;
+        -webkit-animation: none;
+        /*background: #333;*/
+        padding: 0;
+    }
+
+    .main_menu .menu > li > .sub-menu > li,
+    .main_menu .menu ul > li > .sub-menu > li {
+        display: block;
+        padding: 10px 10px;
+    }
+
+    .sp_nav_icon {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+}
+
+
+/*1100px以下*/
+
+@media only screen and (max-width: 1100px) {
+
+    /*******************************************
+    *  Single & Page(投稿・固定ページのデザイン)
+    ********************************************/
+
+    .single_normal_area .sn_wrap {
+        width: 90%;
+    }
+
+}
+
+/*1000px以下*/
+
+@media only screen and (max-width: 1000px) {
+
+    .wrap {
+        width: 90%;
+    }
+
+    .b_l_inner {
+        width: 90%;
+    }
+
+    /*******************************************
+    * Archive(記事一覧ページのスタイル)
+    ********************************************/
+
+    .archive_list li {
+        width: 33.3%;
+    }
+
+    .archive_list li:nth-child(4n) dl {
+        border-right: 0;
+    }
+
+    .archive_list li:nth-child(3n) dl,
+    .archive_list li:last-child dl {
+        border-right: solid 1px #ccc;
+    }
+
+    /*******************************************
+    * Single & Page(投稿・固定ページのデザイン)
+    ********************************************/
+
+    .single_normal_area .sn_wrap .sn_main_area {
+        width: 100%;
+        float: none;
+    }
+
+    .single_normal_area .sn_wrap .sidebar_area {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+    }
+
+    .single_normal_area .sn_wrap #one_column {
+        width: 100%;
+    }
+
+}
+
+
+/*800px以下*/
+
+@media only screen and (max-width: 800px) {
+
+    /*******************************************
+    * Hero area(フロントページのヒーローエリアのスタイル)
+    ********************************************/
+
+    .site_copy {
+        padding: 20px 0;
+    }
+
+    .site_copy h2 {
+        font-size: 28px;
+    }
+
+    .site_copy p {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /*******************************************
+    * Update work(フロントページの更新作品一覧のスタイル)
+    ********************************************/
+
+    .book_list ul li,
+    .pickup_area ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .book_list ul li:nth-child(2),
+    .pickup_area ul li:nth-child(2) {
+        margin: 40px 0;
+    }
+
+    .book_list ul li dl dd,
+    .pickup_area ul li dl dd {
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    .book_list ul li dl dd h4,
+    .pickup_area ul li dl dd h4 {
+        font-size: 20px;
+    }
+
+    .book_list ul li dl dd .novel_data {
+        font-size: 14px;
+    }
+
+    /*******************************************
+    * Banner(フロントページのカスタムバナーのスタイル)
+    ********************************************/
+    .banner {
+        padding: 10px 0 50px;
+    }
+
+
+    /*******************************************
+    * Site description(フロントページのカスタム説明文のスタイル)
+    ********************************************/
+
+    .site_d {
+        padding: 40px 0;
+    }
+
+    .site_d h3 {
+        font-size: 25px;
+    }
+
+    .site_d p {
+        width: 90%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    /*******************************************
+    * News(フロントページのお知らせ一覧のスタイル)
+    ********************************************/
+
+    .news_area {
+        padding: 30px 0 15px;
+    }
+
+    /*******************************************
+    *   Single & Page(投稿・固定ページのデザイン)
+    ********************************************/
+
+    .novel_wrap {
+        height: 75vh;
+    }
+
+    .single_normal_area .sn_wrap .sn_main_area .snm_inner {
+        padding: 40px 20px;
+    }
+
+    /*******************************************
+    *   Archive(記事一覧ページのスタイル)
+    ********************************************/
+
+    .archive_list li {
+        width: 50%;
+    }
+
+    .archive_list li:nth-child(3n) dl {
+        border-right: 0;
+    }
+
+    .archive_list li:nth-child(2n) dl,
+    .archive_list li:last-child dl {
+        border-right: solid 1px #ccc;
+    }
+
+}
+
+
+/*644px以下*/
+
+@media only screen and (max-width: 644px) {
+
+    .header_logo .header_description {
+        font-size: 10px;
+    }
+
+    /*******************************************
+    *   Hero area(フロントページのヒーローエリアのスタイル)
+    ********************************************/
+
+    .site_copy h2 span {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /*******************************************
+    *   Single & Page(投稿・固定ページのデザイン)
+    ********************************************/
+
+    /*前後リンク*/
+
+    .post_link .prev {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .post_link .next {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .post_link .prev a,
+    .post_link .next a {
+        font-size: 12px;
+    }
+
+    /*パンくず*/
+
+    #pankuzu p {
+        font-size: 10px;
+    }
+
+    /*ユーザー情報*/
+
+    .single_normal_area .authorArea dl {
+        display: block;
+    }
+
+    .single_normal_area .authorArea dl dt,
+    .single_normal_area .authorArea dl dd {
+        display: block;
+    }
+
+    .single_normal_area .authorArea dl dt {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .single_normal_area .authorArea dl dd {
+        width: 90%;
+        margin: 1.8em auto 0;
+    }
+
+    /*******************************************
+    * Footer(フッターエリアのスタイル)
+    ********************************************/
+
+    footer #foot_nav {
+        display: none;
+    }
+
+    /*******************************************
+    * TOC
+    ********************************************/
+
+    .sn_main_area #toc_container {
+        padding: 20px 3vw;
+        min-width: auto;
+        width: 100% !important;
+    }
+
+    .sn_main_area #toc_container p.toc_title + ul.toc_list {
+        padding: 20px 0 0;
+    }
+
+    .sn_main_area #toc_container ul.toc_list > li > ul {
+        margin-left: 30px;
+    }
+
+}
+
+/*375px以下*/
+
+@media only screen and (max-width: 375px) {
+
+    /*******************************************
+    * Hero area(フロントページのヒーローエリアのスタイル)
+    ********************************************/
+
+    .site_copy h2 {
+        font-size: 23px;
+    }
+}
+
+/*330px以下*/
+
+@media only screen and (max-width: 330px) {
+
+    /*******************************************
+    *   Hero area(フロントページのヒーローエリアのスタイル)
+    ********************************************/
+
+    .site_copy h2 {
+        font-size: 20px;
+    }
+}
